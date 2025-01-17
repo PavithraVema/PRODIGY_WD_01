@@ -1,0 +1,84 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and sections styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation styles */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar a:hover,
+#navbar a.active {
+  background-color: #f0a500;
+  color: #fff;
+}
+
+/* Sections styling */
+section {
+  padding: 50px;
+  margin-top: 60px;
+}
+
+#home {
+  background-color: #e2e2e2;
+}
+
+#about, #services, #contact {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Adding some space for scrolling */
+section {
+  height: 100vh;
+}
+
+/* On scroll effect */
+.sticky {
+  background-color: #333;
+}
